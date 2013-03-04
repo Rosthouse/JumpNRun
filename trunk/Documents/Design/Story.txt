@@ -1,0 +1,30 @@
+The sequence of events that unfolds
+
+- Story: Develop a story
+
+Debug:
+
+Arthur is a normal guy, living in the Town Malanda. What he doesn't know is that Malanda doesn't really exist.
+Nor does he. He's a video game character after all. 
+
+Even though he's oblivious about his nonexistence, he knows that there's something more out there. Lately, people have been disapearing and he seems to be the only person noticing. 
+One day, something happened that would change his life. His sister disapeared. Not only disapeared. He is the only one remembering her. Everyone he asks tells Arthur that he never had sister.
+
+But he had prove. His sisters Teddybear. With that in his backpack, he walks of to find his sister.
+
+Characters:
+- Arthur
+	Arthur is a nice, quiet guy. He's an exterminator (Kammerjäger/Debugger) and tries hard to keep his family healty.
+		- We could use this as a tutorial mission, where instead of the Debug tools you get later, you use different poisons which act in the same way.
+	
+- Sister (to be named)
+	His younger sister, that makes the plot take off (get's deleted)
+
+- Cracker
+	The main villain. He cracked the game and tries to fuck the world up (for the lulz)
+	-	Needs to have the line "Ain't I a stinker?" Bugs Bunny reference.
+
+- Sarc
+	The Crackers puppet. Even though he has a mind of his own, he does everything his master says.
+	
+

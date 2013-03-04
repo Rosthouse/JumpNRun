@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XmlContentSampleShared.Sprite">
+    <Position>100 100</Position>
+    <Rotation>0</Rotation>
+    <Scale>.5 .5</Scale>
+    <TextureAsset>crate</TextureAsset>
+  </Asset>
+</XnaContent>

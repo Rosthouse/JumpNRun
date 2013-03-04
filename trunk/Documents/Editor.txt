@@ -1,0 +1,235 @@
+5.08.2011
+
+This is the first entry for the map editor. I want to document as much as possible, but as I know myself I can get quite lazy :)
+
+I'll use the same nomenclature as John Carmack did in his plan files for Quake. To quote him here:
+
+[quote]
+When I accomplish something, I write a * line that day.
+Whenever a bug / missing feature is mentioned during the day and I don't fix it, I make a note of it. Some things get noted many times before they get fixed.
+Occasionally I go back through the old notes and mark with a + the things I have since fixed. 
+[/quote]
+
+And in later entries:
+
+[quote]
+A * entry was completed on that day
+A + entry was completed on a later day
+A - entry was decided against on a later day.
+[/quote]
+
+Also, I'll do this:
+
+[quote]
+A # entry was added to the feature list, but not yet implemented
+[/quote]
+
+But I'll add another thing. Infront of every entry I add a A, B or a C, ordering them by importance. A is highest, C lowest. I'll use that in other .plan files as well.
+
+So, for the first time ever, here are my plans:
+
+# C: Add more content directories
+# B: Give the possibility to select objects on screen
+# A: Put
+
+Now I'll go mow the lawn. BRB
+
+6.08.2011
+
+I'm back from drinking. Since I'm still a bit ill, I got back shortly after midnight.
+
+I've been thinking. This whole plan thing isn't really working. I don't know about other programers, but I hate switching between my plans and my code the whole fucking time.
+I'd love to have a system that automaticaly reads stuff out of my code that I've put there, along with the possibility to do daily bloglike posts.
+
+It wouldn't be that hard, I think. VS already does that, to some point. Although it only let's you insert TODO into your code. You can't have an elaborate feature list.
+
+The disatvantage with the plan file is just that. It's messy. Because you have cleartext, features and code all in one file, you lose track of everything. I'd love to filter everything, so that I have all my bugs, features, ideas, blogs and whatnot in one place but still be able to switch between them.
+I don't think it would be that hard to code. Maybe with some kind of XML system, so that it could be easily converted into HTML.
+
+Maybe I haven't done enough research. I need to get onto that ASAP.
+
+I haven't thought of any new features, so I'll just stop here. I'll be back in a few hours.
+
+09.08.2011
+
+I did quite alot of work on the editor. Here's my list
+
+* Added INI-File support
+* Made the map editor zoomable
+* Created a image gallery for textures
+* Prevented putting objects on the map when no Entity is selected
+
+Bugs I have to fix:
+
+* When I click on the map, the object is always off by a few units (about 30 units)
+* The ini-file isn't getting written properly
+# Save the level in the new level format
+# Same for reading
+
+And some things I want to add before I dwelve into my game again:
+
+# Selection of one or several objects
++ Add all current entities to the object list
+# Add a sound tab at the same place where the textures are
+# Add an animation designer. Basically a Window where you can define several rectangles on a texture and save them as an animation. Usefull for spritesheets.
+
+That's basically it for now. It's quite alot of things. And I can say, for my first editor, it isn't half bad. It's straightforward and isn't cluttered. Althought that could be because it's missing features right now.
+
+I'm still not sure in what direction to go with my game. It doesn't really matter anyway. For now, I'll put the editor in a working state and then I'll add whatever I think is fun.
+
+I'll start with bug 1) right now.
+
+"A FEW HOURS LATER"
+
+Well, fixed it. Kinda. It's an ugly hack, but whatever,  I commented it so it should be alright. I guess. I started working on 2), but with no success so far. 
+
+Futurama is still running, for another minute.
+
+I'll do the rest tomorrow.
+
+PS: Fuck it, Fixed the ini file issue anyway. The path was wrong :v Saving comes tomorrow, that's gonna be a bitch.
+
+10.08.2011
+
+I thought of a new feature today (in the shower actually). An object creator. 
+
+* Add an object creator
+
+An object creator adds an object to the object list. It can have several Animations(from the animation designer), is either player, friendly, enemy or neutral.
+This would make it much much easier to create new objects. Rather than having to create a new object and then figuring out how to bring that into the editor, I'll do it the other way around.
+Because I can still save them to the level format, I can just ignore things I haven't implemented yet. Better yet, give out some error texture (like in Garrys Mod, if a model is missing). That way I always know what I'm still missing.
+
+The object list also figures out by itself what things it needs. For example, for each parameter I define, I add a user control (textbox or whatever). That way, I keep my game implementation clean from the editor while still having the power to customize it's editor control.
+
+Not sure how I'll save them. Probably some xml file. It needs to be compatible with the ITEM from the level file.
+
+*AFTER GOING HOME* 
+
+I'm nearly finished with it already. I'm making good progress on it. Now to figure out how to put in in the usable list.
+
+I don't think I get that done today. Dont have my mind together right now. I'm still rather surprised how fast I threw that thig thogether though. And I think it's a really usefull feature.
+Also, I need to think about how to save everything. I do't want to code them again everytime I start the editor. XML is fine, I just need to make it similar to my item implementation in the level xml.
+
+I haven't started on level saving yet. That's going to be a huge task. I don't know how long I had until I've had the feature ready the first time.
+
+Alright, list for tomorrow:
+
++ Sync the object tree views
++ Add a save feature for new objects
+# Make the objects editable (put a new object into the level and being able to edit its parameters)
+
+I think that's good. Alright, commiting now.
+
+11.08.2011
+
+Couple of bugs I need to fix:
+
+* EntityCreator: When I click on a Node, said entity will display its name, but not its parameters
+* EntityCreator: Remove entity doesn't work right now.
+
+I'm going to fix the first right now, shouldn't be to hard. Second is even easier. That was a 2 minute fix :v And second bug fixed as well. I love it when a plan works out :)
+
+Now to move the object list over from the entity creator to the object list.
+
+12.08.2011
+
+Alright, got some things working. I can now succesfully move over the list from the EntityCreator to the MapEditor. Great success.
+
+I'm thinking about saving the things now. I have 3 possible solutions:
+
+1) 	Save all entities in one xml file.
+	Pros:	- Simple to recreate the tree structure
+			- Simple to share
+			- Only one directory -> lowers error rate
+	Cons:	- Not more than one person can work on entities
+			- Possible hard to work with the raw file
+
+2) 	Save all entities to seperate xml files in the same folder
+	Pros: 	- I'm able to keep everything tight
+			- Quite simple to share (Ctrl+A, Ctrl+C)
+			- Single entities can be edited by different people
+	Cons: 	- Complicated to recreate Tree structure
+			- saving folder could get messy
+	
+3) Save all entities to seperate xml file in different folders
+	Pros:	- Simple to recreate tree structure
+			- Several people can work with different files
+	Cons: 	- Probably a huge overhead
+			- Hard to share
+
+Overall, my least favourite is option 2, because with many entities it could get clustered very fast. Also the naming would be a problem. Overall, I prefer option 1. I'll probably implement that.
+For that I need to make a small change to the configuration dialog. Maybe I should even put that stuff in the map properties. Would probably make more sense. That way, you can have different textures for each level. That could also bring quite an overhead. If two levels use the same textures, they get saved twice then.
+
+That's a problem to resolve later.
+
+Anyway, I'll implement a saving feature now with option 1. Seems the best thing right now.
+
+Alrights, what needs to be done for the rest of today:
+
++ Save and load of Entities
+# Being able to edit them in the MapEditor
+
+15.08.2011
+
+I've been making a little pause over the weekend. I'm allowed ;)
+
+Today I managed to create a saving format for the entities. It's now saved in an xml which matches the tree exactly. I can easily read it back into the EntityCreator. Right now I have some troubles replicating the parameters though.
+
+So, list for tonight:
+
++ Fix the parameters not being correctly displayed in the EntityCreator
+# Make objects I post to the level editor editable (finally)
+
+I think that's good for now. It's going to be fun coding while Spongebob is running.
+
+24.08.2011
+
+It's been a while. I wrote something in here between my last post and this, but I fucked up somewhere and lost a something.
+
+There were some things done though. I worked a bit on the entities. I though over doing my generic objects. And apparently I fucked up on commiting my work today as well. Meaning I don't know what I should be working on right now. Shit sucks
+
+The book I ordered arrived some days ago. Game Engine Architecture. It's funny, I have the feeling that I automatically adapted alot of things mentioned in the book. Makes me proud somehow :)
+
+I'm still not sure whether I should post my results so far. I think I need to make my goals a bit clearer. Alright, let's see. I will post my results when:
+
+	- I wrote a proper export tool (with my xml format)
+	- I can select objects, edit them and save them
+	- I can use any texture, define their sizes and what part of them I want to display
+	
+I think that's good. After I have that, I can show my work.
+
+I don't know why this editor is so important to me. I mean, I could create levels with just a text editor. No problem.
+Actually I know quite good. As you (the reader that will probably never see this document) know, I'm a huge fan of Romero and Carmack. The Gamer and the Engineer, in perfect balance. At least for some time.
+I can't do that. I'm alone. But I am both, I am a Gamer and I am an Engineer. With building the Editor before actually finishing my game, I want to make sure that I'm not putting one side of me infront of the other. If I can design and code at the same time, I think it will be alot more dynamic.
+
+It's of course also a good exercise. I don't get much programming to do at work. So I do this instead.
+
+29.08.2011
+
+Alright, I have some things working. At first, I can now load textures from a folder and attach them to an object, meaning I can just use any jgp, png or gif. Very nice.
+What's not so nice, they seem to get placed, well, all over the place. Meaning they don't appear where I want them to appear. I don't know yet if that's a bug in my mousehandeling or if it really is some weird XNA thingy. Investigation ahoy!
+
+I'm not done with the previous problem, but this is at least somewhat releated. Why do I need a Level class?
+Let me rephrase that. Why do I want the Level class to hold it's own objects. It creates a separation that I don't really want. I created the gamestatemanager to hold all (ALL) my objects. This makes it very easy to query collisions, create new objects, update all objects and draw them. But I have to seperately deal with everything inside the level structure.
+The level blocks are WorldObjects. Meaning they have the same root as all my other objects. This is for one to keep everything compatible and for the CollisionQuadTree.
+
+This creates some complication. I later want to be able to move every object. Like, my character can pick up any block and put it somewhere else (someones screaming MINECRAFT CLONE, I can hear it already). If I have a separate Level structur I'll have all the modifier functions for moving and updating implemented twice, once for the gamestatemanager and once for the level.
+This is bad.
+
+One option would be just to put EVERY object in the same list (maybe I need a better list implementation, like a hashmap or something). That way I can have everything. I need to check how foreach works, if I have a generic list and do something like
+
+List<WorldObject> list;
+'Player' is a 'WorldObject'
+
+foreach(Player in list){ .. }
+
+Alright, that thing above doesn't work. It's obvious if you think about it. If I make a foreach, he tries to cast every object to the class I specified. If I hit an object that isn't of that type I get a casting exception.
+It wouldn't even benefit me, performance wise. If I do that, he will go over every object, if it is of the wanted type or not. So, if I do 3 loops like that, he will go 3 times through the list. I think it's much cheaper to do a safe cast. Maybe I can even do some sort of recursive casting. Like I first check the supertype, then the supertype checks for the next class, and so on.
+Maybe that's a bit far down the road. Anyway, back to my real problem: The level
+
+The more I think about it, the more it makes sense to put all level objects inside the gamestatemangaer. I only really need the level for saving purposes right now. Before it was somewhat usefull, because I could check collisions easier (loop through every object). This isn't necessary with the Quadtree anymore. I just need to know which objects collided and handle that accordingly.
+
+Who should do the colliding handeling though. Let's talk Mario. If I hit a ?-block from below, it should give me a mushroom. If I hit it from above, it should just keep me on the block. I can solve that with several collision rectangles, for example. Only I need to know from where I come and if one object is allowed to do a certain action.
+
+Maybe I should do collision handeling for each object itself. Like, I create a collisioninfo (which I believe I already have) and the give that collisioninfo to both colliders. They should then know what to do with them.
+Again the ?-Block example. I give the collisioninfo to the block. The collisioninfo can then cast the object to each thing that's allowed to activate it (Activator Interface?) and then spit out whatever it's carrying. If the collidee hits the block from below that is. And I give the collisioninfo to Mario as well. He can then check if he hit a solid object and then stop his jump or stand on the block.

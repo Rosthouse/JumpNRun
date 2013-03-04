@@ -1,0 +1,28 @@
+Any materials or interactions that make your game possible
+
+SOUND
+- Fix bug where some sound effects get cut off
+	- They are probably destroyed when the GC comes along
+		- Have a system that saves a reference to each SoundEffectInstance and delete it if the sound effect stopped
+	
+PHYSICS
+- Move the movement code to a general physics class. Better to have stupid objects that only handle their own input DONE
+	- This is somewhat achieved right now. Classes only give an input vector, on which the base class decides on how to move them.
+	- The input vector should only contain information in wich direction the object wants to go. It should be normalized and then fed into the
+	  physics library.
+	- The physics library needs to be compatible with the time travel library.
+		- It seems to work, but I'd rather change the time travel code to use the movement code of the physlib. It would be a better unification.
+	- A physics library, even a basic one would be neat. Get cracking on that right now! DONE
+	
+	
+TIME TRAVEL
+Fix time diletation bug, where some objects move faster through time then they should
+  - Solution: The Problem was not things moving faster then they should, it was that they have to move at different speeds, since they travel at
+    different speeds in the normal game.
+	
+- Player Copies: Make it possible to create a copy of a player in time travel mode that acts like the player
+  - Create a copy at one place in time, giving him all the necessary timestamps
+  - delete all timestamps for the actuall player that happen in the future, so that he can create a new path from that timestamp
+  - Make a system for the copies to follow the path using user commands
+    - Calculate the user input from timestamps
+- Player Copies: Make them interact with the player

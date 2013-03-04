@@ -1,0 +1,4 @@
+Audio:
+Chip Sound Pack: Raphael "HardPCM" Couturier, http://hardpcmtechnologies.blogspot.com/
+
+

@@ -1,0 +1,8 @@
+Rules and procedures
+
+PLAYER ACTIONS
+- Make the main player be able to pick up objects.
+  - Swing stuff
+  - Throw stuff
+  - Push stuff
+  - Make those actions avaiable even if nothing is there, for that can be the case in another time

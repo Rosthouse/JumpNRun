@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Level>
+  <LevelDefinition>
+    <Name>Hello</Name>
+    <Version> 0.1</Version>
+    <Author>Patrick</Author>
+    <AuthorMail>rosthouse@gmail.com</AuthorMail>
+    <NextLevel></NextLevel>
+  </LevelDefinition>
+  <Structure>
+    <Layer Name="Floor" Layer="1">
+      <Item ID="23" Type="Player">
+        <Position>50 60</Position>
+        <IsVisible>true</IsVisible>
+        <TextureAsset>Graphics\mario_sheet.png</TextureAsset>
+      </Item>
+    </Layer>
+    <Layer Name="Backgroun" Layer="-23">
+      <Item ID="35" Type="Cloud">
+        <Position>89 654</Position>
+        <IsVisible>true</IsVisible>
+        <TextureAsset>Graphics\questionBox.png</TextureAsset>
+      </Item>
+    </Layer>
+  </Structure>
+</Level>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+	<Floor>
+		  <Item>
+			<Position>0 558</Position>
+			<IsVisible>false</IsVisible>
+			<TextureAsset>Graphics\floorTile</TextureAsset>
+		  </Item>
+		  <Item>
+			<Position>30 558</Position>
+			<IsVisible>false</IsVisible>
+			<TextureAsset>Graphics\floorTile</TextureAsset>
+		  </Item>
+		  <Item>
+			<Position>60 558</Position>
+			<IsVisible>false</IsVisible>
+			<TextureAsset>Graphics\floorTile</TextureAsset>
+		  </Item>
+	</Floor>
+	<Entities>
+		  <Item>
+				<Position>1600 450</Position>
+				<IsVisible>false</IsVisible>
+				<TextureAsset>Graphics\questionBox</TextureAsset>
+		  </Item>
+		  <Item>
+				<Position>1632 450</Position>
+				<IsVisible>false</IsVisible>
+				<TextureAsset>Graphics\questionBox</TextureAsset>
+		  </Item>
+		  <Item>
+				<Position>1664 450</Position>
+				<IsVisible>false</IsVisible>
+				<TextureAsset>Graphics\questionBox</TextureAsset>
+		  </Item>
+	</Entities>
+	<SpawnPosition>100 100</SpawnPosition>
+	<Background>
+		  <TextureAsset>Graphics\background</TextureAsset>
+		  <Amount>3</Amount>
+		  <screenPositions>0 0</screenPositions>
+	</Background>
+</Level>

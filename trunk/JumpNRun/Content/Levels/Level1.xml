@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+    <Floor>
+      <Item>
+        <Position>200 516</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>0 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>30 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>60 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>90 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>120 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>150 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>180 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>210 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>240 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>270 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>300 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>330 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>360 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>390 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>420 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>450 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>480 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>510 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>540 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>570 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>600 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>630 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>660 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>690 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>720 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>750 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>780 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>810 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>840 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>870 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+      <Item>
+        <Position>900 558</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\floorTile</TextureAsset>
+      </Item>
+    </Floor>
+    <Entities>
+      <Item>
+        <Position>300 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>332 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>364 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>396 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>428 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>1600 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>1632 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>1664 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>1696 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+      <Item>
+        <Position>1728 450</Position>
+        <IsVisible>false</IsVisible>
+        <TextureAsset>Graphics\questionBox</TextureAsset>
+      </Item>
+    </Entities>
+    <SpawnPosition>100 100</SpawnPosition>
+    <Background>
+      <TextureAsset>Graphics\background</TextureAsset>
+      <ScreenPosition>0 0</ScreenPosition>
+    </Background>
+</Level>
