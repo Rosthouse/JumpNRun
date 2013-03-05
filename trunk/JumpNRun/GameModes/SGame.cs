@@ -63,8 +63,6 @@ namespace JumpNRunClient.GameModes
 
             gameStateManager.setMovementManager(movementManager);
 
-            
-
             OnPauseEvent += gameStateManager.OnPause;
             OnResumeEvent += gameStateManager.OnResume;
         }
@@ -120,7 +118,7 @@ namespace JumpNRunClient.GameModes
             //Load a debug level
             if (keyboardState.IsKeyDown(Keys.F))
             {
-                level = levelBuilder.BuildLevel(Game.Content, @"Content\Levels\Level2.xml");
+                level = levelBuilder.BuildLevel(Game.Content, @"Content\Levels\Level1.xml");
             }
 #endif
             if (keyboardState.IsKeyDown(Keys.F6))
@@ -345,7 +343,7 @@ namespace JumpNRunClient.GameModes
                 if(movingObject.TimeStamps.Index.Previous != null)
                 {
                     p2 = movingObject.TimeStamps.Index.Previous.Value;
-                    carry = TimeStampHelper.MoveAlongVector(movingObject, movingObject.TimeStamps.Index.Value, p2, 50);
+                    carry = TimeStampHelper.MoveAlongVector(movingObject, movingObject.TimeStamps.Index.Value, p2, 5);
 
                     if(carry != 0)
                     {

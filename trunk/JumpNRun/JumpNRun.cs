@@ -25,6 +25,7 @@ namespace JumpNRunClient
         private SIntro sIntro = null;
         private SMenue sMenue = null;
         private SNothing sNothing = null;
+        private SGame sGame = null;
         private GameMode _currentGameMode;
         private int gamestateCounter = 0;
 
@@ -110,15 +111,14 @@ namespace JumpNRunClient
             sNothing = new SNothing(this);
             sIntro = new SIntro(this);
             sMenue = new SMenue(this);
-            //sGame = new SGame(this);
+            sGame = new SGame(this);
             base.Initialize();
 
             //Set next mode
             sNothing.NextMode = sMenue;
             sIntro.NextMode = sMenue;
-            sMenue.NextMode = sShellGameTest;
-            sShellGameTest.NextMode = sMenue;
-            SGame.NextMode = sMenue;
+            sMenue.NextMode = sGame;
+            sGame.NextMode = sMenue;
 
 
             _currentGameMode = sNothing;
